@@ -1,0 +1,108 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mon Premier Formulaire</title>
+  </head>
+  <style type="text/css">
+h1{
+  text-align: center;
+  margin: auto;
+}
+form{
+  background-color:#DCDCDC;
+  padding:10px;
+  display: inline-block;
+}
+</style>
+  <body>
+<h1>Votre Avis Nous Interesse</h1>
+<table>
+  <TD>
+<form>
+  <fieldset>
+    <legend>Informations Personnelles</legend>
+    <table>
+    <TR>
+    <TD>Nom<span>*</span></TD>
+    <TD>
+      <div>
+      <input id="name" type="text" name="name" required SIZE="50"/>
+      </div>
+    </TD>
+ </TR>
+ <TR>
+ <TD>Date De Naissance<span>*</span></TD>
+ <TD>
+   <div>
+   <input id="Date" type="date" name="Date" required/>
+   </div>
+ </TD>
+ </TR>
+ <TR>
+ <TD>url de votre site: <span>*</span></TD>
+ <TD>
+   <div>
+     <select id ="site">
+       <option >http://</option>
+       <option> https://</option>
+            required> </select>
+        <input id="site" type="text" name="site" required/>
+   </div>
+ </TD>
+</TR>
+<TR>
+<TD>Emploi :<span>*</span></TD>
+<TD>
+  <div>
+    <select id="Emploi" >
+      <option></option>
+      <option>Etudiant</option>
+      <option>Administrateur Réseau</option>
+      <option>Dévelopeur web</option>
+      <option>Web designer</option>
+      <option>DevOps</option>
+    </select>
+  </div>
+</TD>
+</TR>
+<TR>
+<TD>Salaire</TD>
+<TD>
+  <div>
+  <input   step="1000" placeholder="$" required type="number" name ="number">
+  </div>
+</TD>
+</TR>
+</table>
+</fieldset>
+</form>
+</TD>
+<TD>
+
+<form>
+  <fieldset>
+    <legend>Information de contact</legend>
+    <ol>
+      <li>Address ligne 1<br> <input type="address" name="address1" value="" required></li>
+      <li>Address ligne 2<br><input type="addres" name="address2" value="" required></li>
+      <li> <label for ="payer"> payer</label>
+      <select id="payer">
+<option></option>
+<option> Algérie </option>
+<option> Tunisie </option>
+<option> Maroc </option>
+</select>  </li>
+      <li>Tél  <input type="tel" name="" value="" placeholder="eg: +213 67" equired></li>
+      <li>courriel(email): <input type="email" name="" value="" ></li>
+    </ol>
+  </fieldset>
+</form>
+</td>
+</table>
+<h1>Préférences</h1>
+<div>Choisir une couleur <input type="color" name="" value="#000000" required><div/>
+<div>Sur une échelle de 1 à 10 , quel est votre degré d'enthousiasme pour HTML5 ?
+   <input  type="range" id="range" name="range" value="" min="1" max="10" step="1" required><br><div/>
+<div> <input type="submit" name="" value="Envoyer"><div/>
+  </body>
+</html>
